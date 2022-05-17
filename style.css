@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Dela+Gothic+One&family=PT+Sans&family=Poppins:ital,wght@0,300;0,400;1,300;1,500&family=Roboto:ital,wght@0,400;1,300&family=Rubik&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav {
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav img {
+    left: 10vw;
+    line-height: 10vh;
+    position: absolute;
+    width: 5vmax;
+}
+.nav ul a {
+    text-decoration: none;
+    color: black;
+}
+.nav ul {
+    right: 10vw;
+    position: absolute;
+    display: inline;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.jumbotron {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img/gray-oil-paint-textured-background.jpg);
+    background-size: cover;
+}
+.construction {
+    height: 35vmin;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.construction h1 {
+    font-size: 4vmax;
+}
+.construction button {
+    cursor: pointer;
+    border: black;
+    color: white;
+    background-color: black;
+    height: 2.5rem;
+    padding: .5rem 1rem;
+}
+.construction button:hover {
+    transform:scale(1.1);
+    transition: .3s;
+}
+.hamburger:hover {
+    transform: scale(1.05);
+}
+.hamburger {
+    cursor: pointer;
+    z-index: 3;
+    right: 10vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-evenly;
+}
+.hamburger span {
+    height: 3px;
+    background-color: black;
+    width: 20px;
+}
+#about {
+    display: flex;
+    padding: 5vw 10vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.about h1 {
+    margin-top: 2rem;
+}
+
+.gambar img {
+    margin-top: 3rem;
+    width: 300px;
+    position: absolute;
+    cursor: pointer;
+}
+.gambar img:hover {
+    filter: grayscale(.5);
+}
+.kotak {
+    margin-top: 4rem;
+    margin-left: 1rem;
+    width: 300px;
+    height: 312px;
+    border: 2px solid black;
+}
+.about {
+    padding: 0 40px;
+}
+
+.about p {
+    line-height: 1.5rem;
+}
+
+#projects {
+    padding: 1vw 10vw;
+    text-align: center;
+}
+#projects a {
+    text-decoration: none;
+}
+.container-project {
+    min-width: 50vw;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: auto;
+    border-radius: 1rem;
+    width: 21rem;
+    height: 15rem;
+    background-color: rgb(27, 22, 54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    padding: 1rem;
+    color: white;
+    transition: 500ms;
+    margin-top: 1.2rem;
+}
+
+
+.project button {
+    cursor: pointer;
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 1.5rem;
+    border: 2px solid slateblue;
+    background-color: rgb(27, 22, 54);
+    color: white;
+    font-size: .8em;
+}
+.project button:hover {
+    transform: scale(1.05);
+}
+
+#blog {
+    padding: 5vw 10vw;
+    text-align: center;
+}
+.container-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+.blog {
+    border-radius: 1rem;
+    margin: 1rem auto;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border: 3px solid rgb(27, 22, 54);
+}
+.footer {
+    background-color: black;
+    padding: 2vw 10vw;
+    color: white;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+}
+
+.hamburger {
+    position: absolute;
+    z-index: 2;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.hamburger input {
+    position: absolute;
+    height: 1.2rem;
+    width: 1.5rem;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.hamburger span {
+    background-color: black;
+    height: 3px;
+    width: 1.5rem;
+    transition: all .5s;
+}
+
+
+/* Hamburger menu animation */
+.hamburger span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.hamburger span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.hamburger input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px,-1px);
+}
+
+.hamburger input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px,0);
+}
+
+.hamburger input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+
+@media screen and (min-width:900px) {
+    .hamburger {
+        display: none;
+    }
+}
+@media screen and (max-width:900px) {
+    .about h1 {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .nav ul {
+        background-color: slateblue;
+        font-size: 1.5vmax;
+        width: 40%;
+        height: 45vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    .nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .nav ul li {
+        display: inline-block;
+        padding-left: 1rem;
+    }
+    ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        text-decoration: underline;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+    #projects {
+        text-align: center;
+    }
+    .footer {
+        margin-top: 30vmax;
+    }
+}
